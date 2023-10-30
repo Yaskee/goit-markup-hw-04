@@ -330,11 +330,20 @@ button {
 }
 
 .portfolio-cards {
-  position: relative;
+  
   width: calc((100% - 24px * 2) / 3);
   border-radius: 4px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+}
+
+.image-container {
+  position: relative;
   overflow: hidden;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.overlay-paragraph:hover {
+  
 }
 
 .portfolio-cards:hover {
@@ -428,6 +437,7 @@ button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-icon-link:hover {
+.footer-icon-link:hover,
+.footer-icon-link:focus {
   background-color: #31d0aa;
 }
