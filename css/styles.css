@@ -367,7 +367,8 @@ button {
   width: 100%;
 }
 
-.overlay:hover .overlay-paragraph {
+.portfolio-cards:hover .overlay-paragraph,
+.portfolio-cards:focus {
   transform: translateY(0%);
 }
 
